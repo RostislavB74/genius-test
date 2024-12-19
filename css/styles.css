@@ -1,5 +1,5 @@
 @font-face {
-  font-display: swap; 
+  font-display: swap;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 300;
@@ -35,6 +35,9 @@
   --color-primary-light: #faf4ea;
 }
 /* base styles */
+* {
+  box-sizing: border-box;
+}
 body {
   color: var(--color-primary-dark);
   font-family: Poppins, sans-serif;
@@ -42,8 +45,26 @@ body {
   font-weight: 400;
   line-height: 1.5;
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0px;
+}
+.visually-hidden
+{position:absolute;
+left:-10000px;
+top:auto;
+width:1px;
+height:1px;
+overflow:hidden;}
 address {
   font-style: normal;
+}
+.section {
+  padding: 48px 0;
 }
 ul {
   list-style: none;
@@ -71,7 +92,11 @@ ul {
   font-weight: 600;
 }
 /*hero*/
+.hero-section {
+  padding: 272px 0;
+}
 .hero-title {
+  margin-bottom: 0px;
   color: var(--color-primary-light);
   text-align: center;
   font-size: 128px;
@@ -99,6 +124,9 @@ ul {
 }
 
 /*Traditions*/
+.traditions-section {
+  padding: 96px;
+}
 .traditions-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
@@ -137,5 +165,4 @@ ul {
 .address-copyright {
   color: var(--color-primary-light);
   font-size: 14px;
- 
 }
