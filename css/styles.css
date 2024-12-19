@@ -127,6 +127,8 @@ ul {
 .traditions-section {
   padding: 96px;
 }
+.traditions-title {
+  margin-bottom: 42px;
 .traditions-text .brand {
   color: var(--color-brand-light);
   font-weight: 600;
@@ -137,11 +139,18 @@ ul {
 }
 /*Chief*/
 .chiefs-title {
+  margin-bottom: 80px;
+}
+.chief-title {
+  margin-bottom: 16px;
   font-size: 40px;
   font-weight: 600;
 }
 
 /*Formats*/
+.format-title {
+  margin-bottom: 80px;
+}
 .formats-title {
   font-size: 24px;
   font-weight: 600;
@@ -150,7 +159,10 @@ ul {
   font-size: 14px;
   font-weight: 300;
 }
-
+/*Contacts*/
+.contact-title {
+  margin-bottom: 16px;
+}
 /*footer*/
 .address-link {
   color: var(--color-primary-light);
