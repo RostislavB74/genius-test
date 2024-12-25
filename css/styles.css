@@ -29,10 +29,11 @@
   src: url('../fonts/poppins-v22-latin-900.woff2') format('woff2');
 }
 :root {
-  --color-brand-light: #819b57;
+  ---color-brand-normal: #819b57;
   --color-brand-dark: #465929;
   --color-primary-dark: #31261a;
   --color-primary-light: #faf4ea;
+  --color-brand-light: #cfcfbc;
 }
 /* base styles */
 * {
@@ -86,8 +87,8 @@ ul {
   padding: 16px 32px;
   color: var(--color-primary-light);
   font-weight: 600;
-  background-color: var(--color-brand-light);
-  border: 2px solid var(--color-brand-light);
+  background-color: var(---color-brand-normal);
+  border: 2px solid var(---color-brand-normal);
   border-radius: 8px;
   cursor: pointer;
 }
@@ -100,7 +101,7 @@ ul {
   color: var(--color-primary-light);
 }
 .link:hover {
-  color: var(--color-brand-light);
+  color: var(---color-brand-normal);
   /* font-weight: 600; */
 }
 /*Header*/
@@ -127,7 +128,7 @@ ul {
 /*hero*/
 .hero-section {
   padding: 272px 0;
-  background-image: url("../images/cople-in-bakery.jpg");
+  background-image: url('../images/cople-in-bakery.jpg');
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
@@ -140,12 +141,12 @@ ul {
   font-weight: 900;
 }
 .hero-title .accent {
-  background-color: var(--color-brand-light);
+  background-color: var(---color-brand-normal);
 }
 /*advantages*/
 .advantages-section {
   padding: 16px 0;
-  background-color: var(--color-brand-light);
+  background-color: var(---color-brand-normal);
 }
 .advantages-list {
   display: flex;
@@ -165,7 +166,9 @@ ul {
 .section-title .accent {
   color: var(--color-brand-dark);
 }
-
+.section-title.centered{
+  text-align: center;
+}
 /*Traditions*/
 .traditions-section {
   padding: 96px;
@@ -182,7 +185,7 @@ ul {
   margin-bottom: 42px;
 }
 .traditions-text .brand {
-  color: var(--color-brand-light);
+  color: var(---color-brand-normal);
   font-weight: 600;
 }
 
@@ -191,12 +194,25 @@ ul {
 }
 .traditions-text.limited {
   max-width: 330px;
-} 
+}
 /*Chief*/
 .chiefs-title {
-  margin-bottom: 80px;
+  margin:0 auto 80px;
+  max-width: 620px;
 }
-.chiefs-title::before
+.chiefs-title::before {
+  content: '';
+  display: block;
+  width: 352px;
+  border: 2px solid #cfcfbc
+}
+.chiefs-title::after {
+  content: '';
+  display: block;
+  width: 352px;
+  border: 2px solid #cfcfbc
+}
+
 .chief-title {
   margin-bottom: 16px;
   font-size: 40px;
@@ -204,7 +220,7 @@ ul {
 }
 
 /*Formats*/
-.formats-list{
+.formats-list {
   display: flex;
   gap: 20px;
 }
@@ -219,23 +235,28 @@ ul {
   font-size: 14px;
   font-weight: 300;
 }
-.formats-item{
-  flex-basis: calc((100% -40px)/ 3);
+.formats-item {
+  flex-basis: calc((100% -40px) / 3);
   flex-wrap: wrap;
 }
 .format-card {
   height: 444px;
   padding: 24px;
-  border : 2px solid var(--color-brand-light);
+  border: 2px solid var(---color-brand-normal);
   border-radius: 16px;
-  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, var(--color-primary-dark) 100%);
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
 }
 /*Contacts*/
 .contact-title {
   margin-bottom: 16px;
 }
 /*footer*/
-.footer{
+.footer {
   background-image: url('../images/footer-background.png');
   background-color: var(--color-primary-dark);
   background-repeat: no-repeat;
@@ -250,10 +271,9 @@ ul {
 }
 
 .address-link:hover {
-  color: var(--color-brand-light);
+  color: var(---color-brand-normal);
 }
 .address-copyright {
   color: var(--color-primary-light);
   font-size: 14px;
 }
-
