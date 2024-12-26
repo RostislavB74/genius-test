@@ -34,8 +34,7 @@
   --color-brand-light: #cfcfbc;
   --color-primary-dark: #31261a;
   --color-primary-light: #faf4ea;
-  --color-secondary-dark:#A18268;
-  
+  --color-secondary-dark: #a18268;
 }
 /* base styles */
 * {
@@ -94,7 +93,6 @@ ul {
   border: 2px solid var(--color-brand-normal);
   border-radius: 8px;
   cursor: pointer;
-  
 }
 .button:hover {
   color: var(--color-brand-dark);
@@ -170,7 +168,7 @@ ul {
 .section-title .accent {
   color: var(--color-brand-dark);
 }
-.section-title.centered{
+.section-title.centered {
   text-align: center;
 }
 /*Traditions*/
@@ -201,7 +199,7 @@ ul {
 }
 /*Chief*/
 .chiefs-title {
-  margin:0 auto 80px;
+  margin: 0 auto 80px;
   max-width: 620px;
 }
 .chiefs-title::before,
@@ -209,7 +207,7 @@ ul {
   content: '';
   display: block;
   width: 352px;
-  border: 2px solid #cfcfbc
+  border: 2px solid #cfcfbc;
 }
 
 .chief-title {
@@ -217,14 +215,14 @@ ul {
   font-size: 40px;
   font-weight: 600;
 }
-.chief-photo{
-box-shadow: -16px 16px 0 0 var(--color-primary-light), -16px 16px 0 2px var(--color-secondary-dark);
-/* width: 241px;
+.chief-photo {
+  box-shadow: -16px 16px 0 0 var(--color-primary-light),
+    -16px 16px 0 2px var(--color-secondary-dark);
+  /* width: 241px;
 height: 390px;
 gap: 0px; */
-border-radius: 4px 4px 4px 200px;
-/* opacity: 0px; */
-
+  border-radius: 4px 4px 4px 200px;
+  /* opacity: 0px; */
 }
 
 /*Formats*/
@@ -259,6 +257,27 @@ border-radius: 4px 4px 4px 200px;
     var(--color-primary-dark) 100%
   );
 }
+/*Courusel*/
+.carousel-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  fill: var(--color-primary-dark);
+  background-color: transparent;
+  border: 1px solid var(--color-primary-dark);
+  cursor: pointer;
+}
+.carousel-button:hover {
+  background-color: var(--color-primary-dark);
+  fill: var(--color-primary-light);
+}
+
+
+
 /*Contacts*/
 .contact-title {
   margin-bottom: 16px;
@@ -276,6 +295,12 @@ border-radius: 4px 4px 4px 200px;
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
+}
+.adress-icon {
+  fill: var(--color-primary-light);
+}
+.adress-icon:hover {
+  fill: var(--color-brand-normal);
 }
 
 .address-link:hover {
