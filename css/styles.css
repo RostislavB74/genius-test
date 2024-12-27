@@ -236,6 +236,12 @@ gap: 0px; */
   gap: 30px;
 }
 /*Formats*/
+.formats-container{
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  
+}
 .formats-list {
   display: flex;
   gap: 20px;
@@ -247,6 +253,7 @@ gap: 0px; */
   font-size: 24px;
   font-weight: 600;
 }
+
 .formats-text {
   font-size: 14px;
   font-weight: 300;
@@ -280,6 +287,7 @@ gap: 0px; */
   background-color: transparent;
   border: 1px solid var(--color-primary-dark);
   cursor: pointer;
+  flex-shrink: 0;
 }
 .carousel-button:hover {
   background-color: var(--color-primary-dark);
@@ -289,8 +297,20 @@ gap: 0px; */
 
 
 /*Contacts*/
+.contacts-section{
+  padding-bottom: 96px;
+}
 .contact-title {
   margin-bottom: 16px;
+}
+.contacts-container{
+  display: flex;
+  gap: 32px;
+}
+.contact-map{
+  flex-shrink: 0;
+  border: none;
+  border-radius: 16px;
 }
 /*footer*/
 .footer {
