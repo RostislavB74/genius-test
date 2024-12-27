@@ -226,7 +226,17 @@ border-radius: 4px 4px 4px 200px;
 /* opacity: 0px; */
 
 }
-
+.chief-list{
+  display: flex;
+  gap: 30px;
+}
+.chiefs-item {
+  flex-basis: calc((100%-30px)/2);
+}
+.chief-card{
+  display: flex;
+  gap: 30px;
+}
 /*Formats*/
 .formats-list {
   display: flex;
