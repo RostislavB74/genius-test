@@ -238,8 +238,8 @@ ul {
   display: flex;
   gap: 30px;
 }
-.chief-text p {
-  margin-bottom: 24px;
+.chief-text .accent {
+  text-transform: uppercase;
 }
 /*Formats*/
 .formats-container {
@@ -361,6 +361,6 @@ ul {
   color: var(--color-brand-normal);
 }
 .address-copyright {
-  color: var(--color-primary-light);
+  color: var(--color-secondary-dark);
   font-size: 14px;
 }
