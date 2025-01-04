@@ -107,6 +107,7 @@ ul {
 /*links*/
 .link {
   color: var(--color-primary-light);
+  text-decoration: none;
 }
 .link:hover {
   color: var(--color-brand-normal);
