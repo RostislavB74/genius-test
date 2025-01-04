@@ -5,14 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop bakery</title>
-    <!--Fonts-->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;900&display=swap"
-      rel="stylesheet"
-    /> -->
-    <!-- styles-->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -32,7 +24,7 @@
               <li><a class="link" href="#contacts-section">Контакти</a></li>
             </ul>
           </nav>
-          <button class="button" type="button">Замовити дзвінок</button>
+          <button class="button modal-btn-open" type="button">Замовити дзвінок</button>
         </div>
       </div>
     </header>
@@ -83,7 +75,8 @@
       <section class="section" id="chiefs-section">
         <div class="container">
           <h2 class="chiefs-title section-title centered">
-            Наші найкращі <br/> <span class="accent">шеф-кухарі</span>
+            Наші найкращі <br />
+            <span class="accent">шеф-кухарі</span>
           </h2>
           <ul class="chief-list">
             <li class="chiefs-item">
@@ -121,13 +114,18 @@
                   <div class="chief-text">
                     <p>Привіт, я Влад!</p>
                     <p>
-                      Мій кодитерський стаж вже 18 років. <br><span class="accent"
+                      Мій кодитерський стаж вже 18 років. <br /><span
+                        class="accent"
                         >shop bakery</span
-                      > 
-                      - це наша любов, з <br>якою ми ділимось кожен раз з Вами <br> через
-                      нашу випічку!
+                      >
+                      - це наша любов, з <br />якою ми ділимось кожен раз з Вами
+                      <br />
+                      через нашу випічку!
                     </p>
-                    <p>Я зроблю для вас унікальну начинку<br> на будь який смак!</p>
+                    <p>
+                      Я зроблю для вас унікальну начинку<br />
+                      на будь який смак!
+                    </p>
                   </div>
                 </div>
               </article>
@@ -278,5 +276,12 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
+
