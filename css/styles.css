@@ -37,9 +37,7 @@
   --color-secondary-dark: #a18268;
 }
 /* base styles */
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
 }
 body {
@@ -59,10 +57,6 @@ h5,
 h6 {
   margin-top: 0px;
 }
-a{
-  display: inline-block;
-}
-
 .visually-hidden {
   position: absolute;
   left: -10000px;
@@ -206,14 +200,24 @@ ul {
 /*Chief*/
 .chiefs-title {
   margin: 0 auto 80px;
-  max-width: 620px;
+  position: relative;
+  /* max-width: 620px; */
 }
+
 .chiefs-title::before,
 .chiefs-title::after {
+  position: absolute;
+  bottom: 24px;
   content: '';
   display: block;
   width: 352px;
   border: 2px solid #cfcfbc;
+}
+.chiefs-title::before {
+  left: 0;
+}
+.chiefs-title::after {
+  right: 0;
 }
 
 .chief-title {
@@ -224,12 +228,15 @@ ul {
 .chief-photo {
   box-shadow: -16px 16px 0 0 var(--color-primary-light),
     -16px 16px 0 2px var(--color-secondary-dark);
+  /* width: 241px;
+height: 390px;
+gap: 0px; */
   border-radius: 4px 4px 4px 200px;
+  /* opacity: 0px; */
 }
 .chief-list {
   display: flex;
-  gap: 40px 30px;
-  flex-wrap: wrap;
+  gap: 30px;
 }
 .chiefs-item {
   flex-basis: calc((100%-30px) / 2);
@@ -237,9 +244,6 @@ ul {
 .chief-card {
   display: flex;
   gap: 30px;
-}
-.chief-text .accent {
-  text-transform: uppercase;
 }
 /*Formats*/
 .formats-container {
@@ -316,33 +320,21 @@ ul {
   border-radius: 16px;
 }
 /*footer*/
-.footer-container {
-  display: flex;
-  gap: 20px;
-}
-.footer-nav,
-.footer-address {
-  display: flex;
-  flex-basis: 50%;
-  gap: 20px;
-}
-
 .footer {
+  padding: 32px 0;
+  position: relative;
   background-image: url('../images/footer-background.png');
   background-color: var(--color-primary-dark);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 32px 0;
 }
-.footer-logo,
-.footer-menu {
-  flex-grow: 1;
-}
-
-.address-list,
-.address-info {
-  flex-grow: 1;
+.footer::after,
+.footer::before{
+position: absolute;
+background-repeat: no-repeat;
+bottom: 0;
+content: '';
 }
 .address-link {
   color: var(--color-primary-light);
@@ -361,6 +353,18 @@ ul {
   color: var(--color-brand-normal);
 }
 .address-copyright {
-  color: var(--color-secondary-dark);
+  color: var(--color-primary-light);
   font-size: 14px;
+}
+footer::before{
+  width: 180px;
+  height: 120px;
+  left: 0;
+  background-image: url('../images/decor-bread-small.png');
+}
+footer::after{
+  width: 380px;
+  height: 190px;
+  right: 0;
+  background-image: url('../images/decor-bread-large.png');
 }
