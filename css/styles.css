@@ -360,6 +360,9 @@ gap: 0px; */
   flex-basis: 50%;
   gap: 20px;
 }
+.footer-address{
+  justify-content: space-between;
+}
 .footer-logo,
 .footer-menu {
   flex-grow: 1;
@@ -369,6 +372,11 @@ gap: 0px; */
   font-size: 16px;
   font-weight: 300;
   text-decoration: none;
+}
+.social-network{
+  margin-top: 16px;
+  display: flex;
+  gap: 22px;
 }
 .adress-icon {
   fill: var(--color-primary-light);
@@ -413,11 +421,13 @@ footer::after {
 .modal {
   position: relative;
   width: 100%;
+  padding: 128px;
   max-width: 880px;
   height: 100%;
   max-height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
+  text-align: center;
 }
 .modal-btn-close{
   position: absolute;
