@@ -427,7 +427,8 @@ footer::after {
   max-height: 880px;
   background-color: var(--color-primary-light);
   border-radius: 32px;
-  text-align: center;
+  /* text-align: center; */
+  overflow-y: auto;
 }
 .modal-btn-close{
   position: absolute;
@@ -438,4 +439,24 @@ footer::after {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.form-field{
+  margin-bottom: 32px;
+}
+.form-input{
+  padding: 16px 42px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid var(--color-secondary-dark);
+  background-color: transparent;
+}
+
+.form-input:focus{
+  border-color: var(--color-brand-normal);
+  outline: none;
+}
+.form-label{
+  display: block;
+  color: var(--color-secondary-dark);
 }
